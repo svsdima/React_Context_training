@@ -70,7 +70,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 # React Context
-<!-- <App>
+<App>
     <Provider value={lang}>
         <MainPage>
             <Blog>
@@ -92,6 +92,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
             </Consumer>
         </ContactsPage>
     </Provider>
-</App> -->
+</App>
 
 ### Для создания контекста нужно два компонента:  Provider - компонент, в котором можно установить значение для использования ниже по иерархии; Consumer - считывает значение, которое было установлено в Provider.
