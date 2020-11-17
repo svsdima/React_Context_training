@@ -68,3 +68,30 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+# React Context
+<App>
+    <Provider value={lang}>
+        <MainPage>
+            <Blog>
+
+            </Blog>
+        </MainPage>
+
+        <ContactsPage>
+            <Consumer>
+                {
+                    (lang) => {
+                        return (
+                            <Address lang={lang}>
+
+                            </Address>
+                        )
+                    }
+                }
+            </Consumer>
+        </ContactsPage>
+    </Provider>
+</App>
+
+### Для создания контекста нужно два компонента:  Provider - компонент, в котором можно установить значение для использования ниже по иерархии; Consumer - считывает значение, которое было установлено в Provider.
